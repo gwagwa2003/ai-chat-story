@@ -1,0 +1,208 @@
+@font-face {
+    font-family: 'HuaKangWaWaTi';
+    src: url('source/fonts/WaWaSC.TTF') format('truetype');
+}
+
+* {
+    font-family: 'HuaKangWaWaTi', sans-serif;
+}
+
+
+.bk {
+    /* 設置背景圖片 */
+    background-image: url('source/img/background/BK.png');
+    /* 讓背景圖片填滿整個畫面 */
+    background-size: cover;
+    /* 使背景圖片固定，不隨滾動而移動 */
+    background-attachment: fixed;
+}
+
+.navBar-self {
+    background-image: url('source/img/background/barbk.jpeg');
+    border-radius: 30px 30px;
+}
+
+#file-uploader {
+    display: none; /* 隱藏預設的文件上傳按鈕 */
+}
+
+.responseArea {
+    width: 80%;
+    background-color: rgba(200, 255, 209, 0.4);
+    border-radius: 30px 30px;
+    height: auto;
+    margin: auto;
+}
+
+.botResponseArea {
+    height: 800px;
+    display: flex;
+    flex-direction: column-reverse;
+    overflow: auto;
+    /* justify-content:space-between; */
+
+}
+
+.inputArea {
+    display: flex;
+    width: 80%;
+    margin: 20px auto;
+    height: 50px;
+    text-align: center;
+    align-items: center;
+}
+
+.userText {
+    height: 40px;
+    width: 80%;
+    border-radius: 5px 5px;
+    opacity: 0.9;
+    box-shadow: 0 0 20px gray;
+}
+
+.recordButton {
+    background-image: url('source/img/button/mic.svg'); /* 替換為你自己的圖片URL */
+}
+
+.uploadButton {
+    background-image: url('source/img/button/upload.svg'); /* 替換為你自己的圖片URL */
+}
+
+.submitButton {
+    background-image: url('source/img/button/arrow.svg'); /* 替換為你自己的圖片URL */
+}
+
+.imgButton {
+    background-color: transparent;
+    background-size: cover;
+    width: 40px; /* 根據你的圖片大小調整 */
+    height: 40px; /* 根據你的圖片大小調整 */
+    border: none;
+    cursor: pointer;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.imgButton:hover {
+    box-shadow: 0 0 20px gray;
+    border-radius: 10px 10px;
+    scale: 1.1;
+}
+
+.res_img {
+    border-radius: 30px;
+    width: 50%;
+    padding: 10px 10px;
+}
+
+.myMessage {
+    display: flex;
+    flex-direction: row-reverse;
+    overflow-wrap: break-word;
+    width: 50%;
+    transform: translateX(100%);
+
+}
+
+.botMessage {
+    display: flex;
+    width: 50%;
+    overflow-wrap: break-word;
+
+}
+
+.showEmoji, .emoji {
+    background-color: transparent;
+    color: black;
+    border: none;
+}
+
+.emojiList {
+    margin-left: 15px;
+}
+
+.emoji {
+    display: none;
+}
+
+.modifyChat {
+    margin-bottom: 0px;
+    margin-left: 20px;
+    margin-right: 20px;
+    background-color: white;
+    border-radius: 30px;
+    padding: 10px 10px;
+
+}
+
+.musiclist {
+    width: 50%;
+    height: 500px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    position: absolute;
+    background-image: url('source/img/background/mus.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    box-shadow: 0 0 30px gray;
+    transform: translate(50%, -150%);
+    border-radius: 30px;
+    border-bottom-left-radius: 0; /* 左上角尖角 */
+    border-top-right-radius: 0; /* 右下角尖角 */
+    font-weight: bold;
+}
+/* 隱藏 Webkit 瀏覽器的滾動條 */
+.musiclist::-webkit-scrollbar {
+    width: 0;
+    background: transparent;
+}
+
+.musicContainer {
+    width: 100%;
+    /* 確保 .musicContainer 的高度超過 .musiclist 的高度，以顯示滾動條 */
+    height: 1000px; /* 自行調整高度，確保足夠顯示所有內容 */
+}
+
+
+.closeButton {
+    width: 10%;
+    position: absolute;
+    transform: translateX(975%);
+}
+
+span {
+    display: inline-block;
+}
+
+.musicTitle {
+    font-size: 30px;
+    /* transform: translateY(-45%); */
+    overflow: hidden;
+    text-align: center;
+}
+
+.music {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 5px;
+    padding: 10px;
+    margin-right: 10px;
+
+}
+
+li {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+
+
+
+
+
+
+
+
