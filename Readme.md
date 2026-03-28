@@ -18,9 +18,3 @@
 2. 視需要執行 `server/change_gpt.py` 或 `server/change_sovits.py`
 3. 執行 `server/server.py`
 4. 開啟 `web/index.html`
-
-## GitHub 上傳前注意
-
-- `.env` 不會上傳
-- `流螢-training/`、`server/GPT_weights/`、`server/SoVITS_weights/`、`server/Voice/` 不會上傳
-- `Output/` 和 `output.wav` 不會上傳
