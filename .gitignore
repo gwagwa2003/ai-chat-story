@@ -15,6 +15,7 @@ venv/
 web/.idea/
 
 node_modules/
+docs/plans/
 
 Output/
 output.wav
